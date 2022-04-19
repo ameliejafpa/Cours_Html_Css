@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Récapitulatif</title>
+     <!-- appel du fichier css -->
+     <link rel="stylesheet" href="css/recap.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">index</a>
+    </header>
+
+    <h1 id="liens">Les liens!</h1>
+        <h3>les liens internes </h3>
+        <!-- Ils renvoient à une autre page de l'appli web -->
+            <a href="index.html">index</a>
+            <a href="Contact.html">Contact</a>
+        <h3>les liens externes</h3>
+        <!-- Ils renvoient à une page externe. targt="blank" -->
+            <a href="https://www.afpa.fr/">Lien Afpa, s'ouvre sur le même onglet</a>
+            <a href="https://www.afpa.fr/" target="_blank">Lien Afpa, s'ouvre dans un nouvel onglet</a>
+            <a href="https://www.google.com/maps" target="_blank">
+                <!-- Pour mettre un lien dans une image, on utilise une balise image à la place du texte -->
+                <img src="images/google_maps_logo.jpg" alt="logo google maps"></a>
+        <h3>Les liens ancres</h3>
+            <!-- Ils renvoient à une id de la page -->
+            <a href="#liens" title="Les liens">Les liens</a>
+            <a href="#listes" title="Les listes">Les listes</a>
+            <a href="#tableaux" title="Les tableaux">Les tableaux</a>
+
+    <hr>
+
+    <h1 id="listes">Les listes</h1>
+        <h3>les listes non ordonnées (à puces)</h3>
+        <!-- On utilise la balise ul puis à l'intérieur la balise li pour chaque élément de la liste -->
+            <!-- Pour faire une sous-liste, on rajoute une balise ul (ou ol) et ses balises li sous le li parent -->
+            <ul>
+                <li>pêches</li>
+                <li>pommes</li> 
+                    <ul>
+                        <li>pink lady</li>
+                        <li>golden</li>
+                        <li>royal gala</li>
+                        <li>granny smith</li>
+                    </ul>     
+                <li>poires</li>
+                <li>abricots</li>
+            </ul>
+
+        <h3>les listes ordonnées</h3>
+         <!-- On utilise la balise ol puis à l'intérieur la balise li pour chaque élément de la liste -->
+            <ol>
+                <li>pêches</li>
+                <li>pommes</li>
+                    <ol>
+                        <li>pink lady</li>
+                        <li>golden</li>
+                        <li>royal gala</li>
+                        <li>granny smith</li>
+                    </ol>     
+                <li>poires</li>
+                <li>abricots</li>
+            </ol>
+    <hr>
+
+    <h1 id="tableaux">Les tableaux</h1>
+
+    <table id="tableauStatistiques">
+        <!-- 1ere version, la plus facile
+        <caption>Statistiques</caption> -->
+        <tr>
+            <th colspan="4">Statistiques</th>
+            <!-- colspan permet de fusionner des cellules horizontalement,
+                rowspan pour fusionner verticalement -->
+        </tr>
+            <tr>
+                <th>Pays</th>
+                <td>France</td>
+                <td>Italie</td>
+                <td>Espagne</td>
+            </tr>
+            <tr>
+                <th>Nombre d'habitants</th>
+                <td>65 000 000</td>
+                <td>60 157 214</td>
+                <td>46 661 950</td>
+            </tr>
+            <tr>
+                <th>Capitale</th>
+                <td>Paris</td>
+                <td>Rome</td>
+                <td>Madrid</td>
+            </tr>
+    </table>
+   
+</body>
+</html>

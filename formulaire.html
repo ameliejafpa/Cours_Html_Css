@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+    <style>
+        div{
+            display: block;
+            padding-bottom: 10px;
+        }
+        input:required{
+            border: solid red 1px;
+        }
+    </style>
+
+
+<!-- methoode 1 de responcive -->
+<link rel="stylesheet" type="text/css" media="screen and (max-width:500px)" href="">
+
+
+<!-- methode 2 de responsive -->
+<style>
+@media screen and (min-device-width:200px) and (max-device-width:640px){
+
+    }
+</style>
+
+</head>
+<body>
+    
+    <form action="" method="post">
+        <!-- action dit à quelle page envoyer les info écrites -->
+        <!-- method : get: afficher / post: poster -->
+        <div>
+            <label for="nom">saisir votre nom</label>
+            <!-- label permet d'indiquer à l'utilisateur ce qu'on attend de lui -->
+            <!-- mettre l'id du for en input pour que la selection osit automatique -->
+            <input type="text" id="nom" placeholder="saisis ton nom" required>
+            <!-- placeholder : inscrit un texte dans le champs à completer -->
+            <!-- required : rend le champs obligatoire -->
+        </div>
+
+        <div>
+            <label for="genre">genre</label>
+            <select name="genre" id="genre">
+                <option value="1">femme</option>
+                <option value="2">homme</option>
+                <option value="3">autre</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="naissance">date de naissance</label>
+            <input type="date">
+        </div>
+
+        <div>
+            <label for="tel">n° telephone</label>
+            <input type="tel" id="tel" maxlength="10" >
+        </div>
+
+        <div>
+            <label for="email">email</label>
+            <input type="email" id="email">
+        </div>
+        
+        <div>
+            <label for="password">password</label>
+            <input type="password" id="password"  pattern="^[0-9]{5}" placeholder="5 chiffres">
+        </div>
+
+        <div>
+            <label for="color">couleur préférée</label>
+            <input type="color" id="color">
+        </div>
+
+        <div>
+            <label for="jauge">jauge</label>
+            <input type="range" id="range">
+        </div>
+
+        <div>
+            <label for="hidden">hidden</label>
+            <input type="hidden" id="hidden">
+        </div>
+
+        
+        <textarea name="commentaire" id="commentaire" cols="30" rows="10" placeholder="commentaire"></textarea>
+
+        <div>
+            <label for="newletter">j'accepte de recevoir la newsletter</label>
+            <input type="checkbox" id="newsletter"></div>
+        <div>
+
+        <div>
+            <label for="newletter">j'accepte de recevoir la newsletter</label>
+            <input type="radio" id="newsletter"></div>
+        <div>
+
+        <div>
+            <label for="file">j'upload un fichier</label>
+            <input type="file" id="file"></div>
+        <div>
+
+        <div>
+            <label for="site">j'entre une url</label>
+            <input type="url" id="site">
+        <div>
+            
+    
+
+
+            <input type="submit">
+            <input type="reset"></div>
+
+
+
+
+    </form>
+
+</body>
+</html>

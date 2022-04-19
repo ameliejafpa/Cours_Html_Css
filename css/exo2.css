@@ -1,0 +1,27 @@
+*{
+    background-color: black;
+}
+
+table{
+    border-collapse: separate;
+    text-align: center;
+}
+
+
+th{
+    background-color: fuchsia;
+    padding: 10px;
+}
+
+td{
+    background-color: white;
+    padding: 10px;
+}
+
+/* caption{
+    caption-side: top;
+    background-color: fuchsia;
+    block-size: 30px;
+    padding-top: 15px;
+    font-weight: bolder;
+} */

@@ -1,0 +1,23 @@
+/* Se répète, faire un seul style pour les 2
+.header{
+    background-color: orange;
+    block-size: 50px;
+}
+.footer{
+    background-color: orange;
+    height: 50px;
+} */
+.header, .footer{
+    background-color: orange;
+    block-size: 50px;
+}
+
+#blocBleu{
+    background-color: aqua;
+    block-size: 10px;
+}
+
+#blocJaune{
+    background-color: rgba(255, 255, 0, 0.589);
+    block-size: 300px;
+}

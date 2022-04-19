@@ -1,0 +1,97 @@
+body{
+    background-color: blanchedalmond;
+}
+
+a{
+    /* par défaut la balise a est de type inline -> les éléments sont affichés les uns après les autres.
+        En changeant le type en bloc, les éléments vont s'afficher les uns sous les autres*/
+    display: block;
+    /* Le padding permet ici d'éloigner les blocs entre eux
+        padding : 5px -> 5px partout (haut droit bas gauche)
+        padding : 5px 2px -> 5px haut bas, 2px droite gauche
+        padding : 5px 2px 7px -> 5px haut, 2px droite gauche, 7px bas
+        padding : 5px 2px 7px 4px -> 5px haut, 2px droite, 7px bas, 4px gauche*/
+    padding: 5px 6px 7px;
+    width: fit-content;
+}
+
+header{
+    /* background-color: rgb(119, 11, 26) ; */
+    width: 100%;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 20px;
+    height: 30px;
+    font-size: 40px;
+    padding: 10px 10px 30px 10px;
+}
+
+header a{
+    color: beige;
+    text-decoration: none;
+}
+
+h1{
+    border: solid 3px;
+    border-radius: 20px;
+    /* background-color: beige; */
+    background: radial-gradient(ellipse at center, rgb(142, 202, 134) 5%, rgba(100, 197, 87, 0.679) 5%, rgba(66, 197, 49, 0.433) 75%, rgba(30, 206, 7, 0.227) 10%);
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+h3{
+    border-bottom: solid 3px;
+    border-bottom-style: double;
+    margin-bottom: 5px;
+}
+
+img{
+    width: 40px;
+}
+
+/* ajouter !important si à passer en priorité */
+
+/* mise en forme des listes */
+
+ul li{
+    list-style-type: square ;
+}
+
+ol li{
+    list-style-type: upper-latin;
+}
+
+
+
+
+table{
+    background-color: rgb(17, 71, 141);
+    color: darkgoldenrod;
+    width: 800px;
+    text-align: center;
+    
+}
+    td, th{
+        border: solid 5px;
+    }
+
+    thead{
+        font-size: larger;
+    }
+
+    td{
+        font-size: smaller;
+    }
+
+    #tableauStatistiques th{
+        background-color: blueviolet;
+    }
+
+.action{
+    color: crimson;
+}

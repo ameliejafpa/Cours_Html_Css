@@ -1,0 +1,219 @@
+*{
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer{
+    background-color: chocolate;
+    color: bisque;
+    border : solid 5px;
+    border-color: black;
+    width: 100%;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+body{
+    background:rgb(219, 188, 158);
+}
+
+section{
+    height: 70%;
+}
+
+table{
+    background-color: rgb(17, 71, 141);
+    color: darkgoldenrod;
+    width: 800px;
+    text-align: center;
+}
+    thead{
+        font-size: larger;
+    }
+
+    td{
+        font-size: smaller;
+    }
+
+#unique{
+    background-color: blueviolet;
+}
+
+.action{
+    color: crimson;
+}
+
+h1{
+    display: inline;
+}
+
+div img{
+    width: 50px;
+}
+
+.parent{
+    font-size: 30px;
+}
+#enfantPourcentage{
+    font-size: 150%;
+}
+#enfantEM{
+    font-size: 0.5em;
+}
+#enfantREM{
+    font-size: 1rem;
+    color: crimson;
+}
+
+.parentVW{
+    width: 50vw;
+    height: 10vh;
+    background-color: lightblue;
+}
+#enfantVW{
+    width: 80vw;
+}
+#enfantPourcentageEcran{
+    width: 80%;
+
+}
+
+.inline h2{
+    display: inline;
+    border: solid blue 2px;
+    height: 30px;
+}
+.block h2{
+    display: block;
+    border: solid purple 2px;
+    height: 30px;
+}
+.inlineBlock h2{
+    display: inline-block;
+    border: solid green 2px;
+    height: 30px;
+}
+.flex h2{
+    display:flex;
+    border: solid orange 2px;
+    height: 30px;
+}
+
+
+.imgfloat{
+    float: left;
+}
+.imgfloat img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.imgclear{
+    float: left;
+}
+.imgclear img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+}
+.clearfix{
+    clear: both;
+}
+
+.imgoverfow{
+    float: left;
+}
+.imgoverfow img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+}
+.txtoverflow{
+    overflow: auto;
+}
+
+.imgSuivre{
+    float: left;
+    shape-outside: circle();
+}
+
+.imgSuivre img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.static b{
+    display: block;
+    background-color: rgba(242, 79, 79);
+    position: static;
+    top: 0;
+    left: 0;
+}
+
+.fixed b{
+    display: block;
+    background-color: rgba(242, 79, 79, 0.700);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.relative b{
+    display: block;
+    background-color: rgba(242, 79, 79, 0.700);
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+#estAbsolute{
+    display: block;
+    background-color: rgba(242, 79, 79, 0.700);
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.absolute b{
+    display: block;
+    background-color: rgba(242, 79, 79, 0.700);
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.sticky{
+    background-color: rgba(242, 79, 79, 0.700);
+    position: sticky;
+    top: 0;
+}
+
+.pseudoClasse :first-child{
+    border: solid purple 3px;
+}
+.pseudoClasse :last-child{
+    border: solid blue 3px;
+}
+p::first-line{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+p:nth-of-type(2n){
+    background-color: rgba(0, 0, 255, 0.248);
+}
+p:nth-of-type(2n-1){
+    background-color: rgba(0, 255, 0, 0.248);
+}

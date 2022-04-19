@@ -1,0 +1,28 @@
+.container{
+    border: solid black 1px;
+}
+
+article{
+    margin: 15px 10px 15px 10px;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.imgFloatLeft{
+    float: left;
+    padding-right: 5px;
+}
+
+.imgFloatRight{
+    float: right;
+    padding-left: 5px;
+}
+
+.txt {
+    text-align: justify;
+}
+
